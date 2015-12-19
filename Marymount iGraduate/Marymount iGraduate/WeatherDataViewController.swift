@@ -1,0 +1,38 @@
+//
+//  WeatherDataViewController.swift
+//  Weather
+//
+//  Created by Joyce Echessa on 10/16/14.
+//  Copyright (c) 2014 Appcoda. All rights reserved.
+//
+
+import UIKit
+
+public class WeatherDataViewController: UIViewController {
+    
+    @IBOutlet public var temperatureLabel: UILabel!
+    @IBOutlet public var summaryLabel: UILabel!
+    @IBOutlet public var locationLabel: UILabel!
+    
+    public var weatherData: WeatherData?
+    
+    public func updateData() {
+        if let unwrappedWD = weatherData {
+            self.temperatureLabel.text =  "\(unwrappedWD.temperature)°"
+            self.summaryLabel.text =  "\(unwrappedWD.summary)"
+           
+        }
+        
+    }
+    
+    public func getWeatherData(latLong: String, completion: (error: NSError?) -> ()) {
+        WeatherService.sharedInstance.fetchWeatherData(latLong, completion: { (data, error) -> () in
+        dispatch_async(dispatch_get_main_queue()) {
+        self.weatherData = data
+        completion(error: error)
+        }
+        })
+    }
+    
+}
+

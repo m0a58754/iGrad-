@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A3E596A1BEC853A00DF5DCC /* tableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */; };
+		2A6363C21BDC6193006F35B6 /* clouds104-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6363C11BDC6193006F35B6 /* clouds104-2.png */; };
+		2A6363C41BDC620B006F35B6 /* clouds104-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6363C31BDC620B006F35B6 /* clouds104-6.png */; };
+		2A6363C61BE5D331006F35B6 /* WeatherDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6363C51BE5D331006F35B6 /* WeatherDataViewController.swift */; };
+		2A6363C81BE5D3D4006F35B6 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6363C71BE5D3D4006F35B6 /* WeatherData.swift */; };
+		2A6363CA1BE5D440006F35B6 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6363C91BE5D440006F35B6 /* WeatherService.swift */; };
+		2A6561C91BD49CB50035E949 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6561C81BD49CB50035E949 /* Images.xcassets */; };
+		2A6561CB1BD4A6AE0035E949 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6561CA1BD4A6AE0035E949 /* HomeViewController.swift */; };
+		2A70244C1BFFAA2C00E6013C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70244B1BFFAA2C00E6013C /* Model.swift */; };
+		2A8843521C0568EC00E897A8 /* one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8843511C0568EC00E897A8 /* one.jpg */; };
+		2AAC65C81BBE43170099E96E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAC65C71BBE43170099E96E /* AppDelegate.swift */; };
+		2AAC65CD1BBE43170099E96E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC65CB1BBE43170099E96E /* Main.storyboard */; };
+		2AAC65D21BBE43170099E96E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC65D01BBE43170099E96E /* LaunchScreen.xib */; };
+		2AAC65DE1BBE43170099E96E /* Marymount_iGraduateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAC65DD1BBE43170099E96E /* Marymount_iGraduateTests.swift */; };
+		2AAC65E81BBE43450099E96E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65E71BBE43450099E96E /* QuartzCore.framework */; };
+		2AAC65EA1BBE434E0099E96E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65E91BBE434E0099E96E /* Social.framework */; };
+		2AAC65EC1BBE43550099E96E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65EB1BBE43550099E96E /* Accounts.framework */; };
+		2AAC65EE1BBE436B0099E96E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65ED1BBE436B0099E96E /* libsqlite3.dylib */; };
+		2AAC65F01BBE43760099E96E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65EF1BBE43760099E96E /* libz.dylib */; };
+		2AAC65F21BBE43830099E96E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65F11BBE43830099E96E /* SystemConfiguration.framework */; };
+		2AAC65F41BBE438D0099E96E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65F31BBE438D0099E96E /* StoreKit.framework */; };
+		2AAC65F61BBE439C0099E96E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65F51BBE439C0099E96E /* Security.framework */; };
+		2AAC65F81BBE43A40099E96E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65F71BBE43A40099E96E /* MobileCoreServices.framework */; };
+		2AAC65FA1BBE43AD0099E96E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65F91BBE43AD0099E96E /* CoreLocation.framework */; };
+		2AAC65FC1BBE43B20099E96E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65FB1BBE43B20099E96E /* CFNetwork.framework */; };
+		2AAC65FE1BBE43BD0099E96E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65FD1BBE43BD0099E96E /* AudioToolbox.framework */; };
+		2AAC66021BBE43D30099E96E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC65FF1BBE43D30099E96E /* Bolts.framework */; };
+		2AAC66031BBE43D30099E96E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC66001BBE43D30099E96E /* Parse.framework */; };
+		2AAC66041BBE43D30099E96E /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAC66011BBE43D30099E96E /* ParseUI.framework */; };
+		2AAC66091BBE44570099E96E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAC66081BBE44570099E96E /* LoginViewController.swift */; };
+		2AAC660B1BBE45320099E96E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAC660A1BBE45320099E96E /* RegisterViewController.swift */; };
+		2AAC661C1BC074570099E96E /* logo11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC661B1BC074570099E96E /* logo11.jpg */; };
+		2AAC661E1BC074CF0099E96E /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC661D1BC074CF0099E96E /* logo1.png */; };
+		2AAC66201BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC661F1BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg */; };
+		2AE68D681BD94BB8001062FD /* door13-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D671BD94BB8001062FD /* door13-4.png */; };
+		2AE68D6A1BD9569A001062FD /* door13-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D691BD9569A001062FD /* door13-5.png */; };
+		2AE68D6C1BD9815E001062FD /* search67.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D6B1BD9815E001062FD /* search67.png */; };
+		2AE68D6E1BD982E5001062FD /* search67-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D6D1BD982E5001062FD /* search67-3.png */; };
+		2AE6B4131BD5BD26005506FC /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE6B4121BD5BD26005506FC /* tableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AAC65D81BBE43170099E96E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AAC65BA1BBE43170099E96E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AAC65C11BBE43170099E96E;
+			remoteInfo = "Marymount iGraduate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewCellViewController.swift; sourceTree = "<group>"; };
+		2A6363C11BDC6193006F35B6 /* clouds104-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clouds104-2.png"; path = "../../../../Downloads/clouds104-2.png"; sourceTree = "<group>"; };
+		2A6363C31BDC620B006F35B6 /* clouds104-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clouds104-6.png"; path = "../../../../Downloads/clouds104-6.png"; sourceTree = "<group>"; };
+		2A6363C51BE5D331006F35B6 /* WeatherDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataViewController.swift; sourceTree = "<group>"; };
+		2A6363C71BE5D3D4006F35B6 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		2A6363C91BE5D440006F35B6 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		2A6561C81BD49CB50035E949 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../Downloads/ParseDemo/ParseDemo/Images.xcassets; sourceTree = "<group>"; };
+		2A6561CA1BD4A6AE0035E949 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../Downloads/ParseDemo/ParseDemo/HomeViewController.swift; sourceTree = "<group>"; };
+		2A70244B1BFFAA2C00E6013C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2A8843511C0568EC00E897A8 /* one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = one.jpg; sourceTree = "<group>"; };
+		2AAC65C21BBE43170099E96E /* Marymount iGraduate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marymount iGraduate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AAC65C61BBE43170099E96E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AAC65C71BBE43170099E96E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AAC65CC1BBE43170099E96E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AAC65D11BBE43170099E96E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2AAC65D71BBE43170099E96E /* Marymount iGraduateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marymount iGraduateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AAC65DC1BBE43170099E96E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AAC65DD1BBE43170099E96E /* Marymount_iGraduateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marymount_iGraduateTests.swift; sourceTree = "<group>"; };
+		2AAC65E71BBE43450099E96E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2AAC65E91BBE434E0099E96E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2AAC65EB1BBE43550099E96E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		2AAC65ED1BBE436B0099E96E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2AAC65EF1BBE43760099E96E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2AAC65F11BBE43830099E96E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2AAC65F31BBE438D0099E96E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2AAC65F51BBE439C0099E96E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2AAC65F71BBE43A40099E96E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2AAC65F91BBE43AD0099E96E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2AAC65FB1BBE43B20099E96E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2AAC65FD1BBE43BD0099E96E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2AAC65FF1BBE43D30099E96E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2AAC66001BBE43D30099E96E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2AAC66011BBE43D30099E96E /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		2AAC66071BBE444C0099E96E /* ParseTutorial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParseTutorial-Bridging-Header.h"; sourceTree = "<group>"; };
+		2AAC66081BBE44570099E96E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2AAC660A1BBE45320099E96E /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2AAC661B1BC074570099E96E /* logo11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo11.jpg; sourceTree = "<group>"; };
+		2AAC661D1BC074CF0099E96E /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
+		2AAC661F1BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Marymount_Athletics_Logo1.jpg; sourceTree = "<group>"; };
+		2AE68D671BD94BB8001062FD /* door13-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "door13-4.png"; path = "../../../../Downloads/door13-4.png"; sourceTree = "<group>"; };
+		2AE68D691BD9569A001062FD /* door13-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "door13-5.png"; path = "../../../../Downloads/door13-5.png"; sourceTree = "<group>"; };
+		2AE68D6B1BD9815E001062FD /* search67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search67.png; path = ../../../../Downloads/search67.png; sourceTree = "<group>"; };
+		2AE68D6D1BD982E5001062FD /* search67-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search67-3.png"; path = "../../../../Downloads/search67-3.png"; sourceTree = "<group>"; };
+		2AE6B4121BD5BD26005506FC /* tableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AAC65BF1BBE43170099E96E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AAC65FE1BBE43BD0099E96E /* AudioToolbox.framework in Frameworks */,
+				2AAC65FC1BBE43B20099E96E /* CFNetwork.framework in Frameworks */,
+				2AAC65FA1BBE43AD0099E96E /* CoreLocation.framework in Frameworks */,
+				2AAC65F81BBE43A40099E96E /* MobileCoreServices.framework in Frameworks */,
+				2AAC65F61BBE439C0099E96E /* Security.framework in Frameworks */,
+				2AAC65F41BBE438D0099E96E /* StoreKit.framework in Frameworks */,
+				2AAC65F21BBE43830099E96E /* SystemConfiguration.framework in Frameworks */,
+				2AAC66021BBE43D30099E96E /* Bolts.framework in Frameworks */,
+				2AAC65F01BBE43760099E96E /* libz.dylib in Frameworks */,
+				2AAC65EE1BBE436B0099E96E /* libsqlite3.dylib in Frameworks */,
+				2AAC66031BBE43D30099E96E /* Parse.framework in Frameworks */,
+				2AAC65EC1BBE43550099E96E /* Accounts.framework in Frameworks */,
+				2AAC66041BBE43D30099E96E /* ParseUI.framework in Frameworks */,
+				2AAC65EA1BBE434E0099E96E /* Social.framework in Frameworks */,
+				2AAC65E81BBE43450099E96E /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AAC65D41BBE43170099E96E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A2CBE131BDA94D600CC4705 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				2A6363C11BDC6193006F35B6 /* clouds104-2.png */,
+				2A6363C31BDC620B006F35B6 /* clouds104-6.png */,
+				2AE68D6D1BD982E5001062FD /* search67-3.png */,
+				2AE68D6B1BD9815E001062FD /* search67.png */,
+				2AE68D691BD9569A001062FD /* door13-5.png */,
+				2AE68D671BD94BB8001062FD /* door13-4.png */,
+				2AAC661F1BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg */,
+				2AAC661D1BC074CF0099E96E /* logo1.png */,
+				2AAC661B1BC074570099E96E /* logo11.jpg */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		2A6363CE1BE6E555006F35B6 /* Weather Service */ = {
+			isa = PBXGroup;
+			children = (
+				2A6363C91BE5D440006F35B6 /* WeatherService.swift */,
+				2A6363C71BE5D3D4006F35B6 /* WeatherData.swift */,
+				2A6363C51BE5D331006F35B6 /* WeatherDataViewController.swift */,
+			);
+			name = "Weather Service";
+			sourceTree = "<group>";
+		};
+		2A6363CF1BE6F34F006F35B6 /* Login Service */ = {
+			isa = PBXGroup;
+			children = (
+				2AAC660A1BBE45320099E96E /* RegisterViewController.swift */,
+				2A6561CA1BD4A6AE0035E949 /* HomeViewController.swift */,
+				2AAC66081BBE44570099E96E /* LoginViewController.swift */,
+			);
+			name = "Login Service";
+			sourceTree = "<group>";
+		};
+		2AAC65B91BBE43170099E96E = {
+			isa = PBXGroup;
+			children = (
+				2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */,
+				2AAC66161BBF1C000099E96E /* Framwork */,
+				2AAC65C41BBE43170099E96E /* Marymount iGraduate */,
+				2AAC65DA1BBE43170099E96E /* Marymount iGraduateTests */,
+				2AAC65C31BBE43170099E96E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AAC65C31BBE43170099E96E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AAC65C21BBE43170099E96E /* Marymount iGraduate.app */,
+				2AAC65D71BBE43170099E96E /* Marymount iGraduateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AAC65C41BBE43170099E96E /* Marymount iGraduate */ = {
+			isa = PBXGroup;
+			children = (
+				2A8843511C0568EC00E897A8 /* one.jpg */,
+				2AAC65C71BBE43170099E96E /* AppDelegate.swift */,
+				2AE6B4121BD5BD26005506FC /* tableViewController.swift */,
+				2A70244B1BFFAA2C00E6013C /* Model.swift */,
+				2A2CBE131BDA94D600CC4705 /* Pictures */,
+				2A6363CF1BE6F34F006F35B6 /* Login Service */,
+				2A6363CE1BE6E555006F35B6 /* Weather Service */,
+				2AAC66071BBE444C0099E96E /* ParseTutorial-Bridging-Header.h */,
+				2AAC65CB1BBE43170099E96E /* Main.storyboard */,
+				2AAC65C51BBE43170099E96E /* Supporting Files */,
+			);
+			path = "Marymount iGraduate";
+			sourceTree = "<group>";
+		};
+		2AAC65C51BBE43170099E96E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AAC65D01BBE43170099E96E /* LaunchScreen.xib */,
+				2A6561C81BD49CB50035E949 /* Images.xcassets */,
+				2AAC65C61BBE43170099E96E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AAC65DA1BBE43170099E96E /* Marymount iGraduateTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AAC65DD1BBE43170099E96E /* Marymount_iGraduateTests.swift */,
+				2AAC65DB1BBE43170099E96E /* Supporting Files */,
+			);
+			path = "Marymount iGraduateTests";
+			sourceTree = "<group>";
+		};
+		2AAC65DB1BBE43170099E96E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AAC65DC1BBE43170099E96E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AAC66161BBF1C000099E96E /* Framwork */ = {
+			isa = PBXGroup;
+			children = (
+				2AAC65E71BBE43450099E96E /* QuartzCore.framework */,
+				2AAC65E91BBE434E0099E96E /* Social.framework */,
+				2AAC65EB1BBE43550099E96E /* Accounts.framework */,
+				2AAC65ED1BBE436B0099E96E /* libsqlite3.dylib */,
+				2AAC65EF1BBE43760099E96E /* libz.dylib */,
+				2AAC65F11BBE43830099E96E /* SystemConfiguration.framework */,
+				2AAC65F31BBE438D0099E96E /* StoreKit.framework */,
+				2AAC65F51BBE439C0099E96E /* Security.framework */,
+				2AAC65F71BBE43A40099E96E /* MobileCoreServices.framework */,
+				2AAC65F91BBE43AD0099E96E /* CoreLocation.framework */,
+				2AAC65FB1BBE43B20099E96E /* CFNetwork.framework */,
+				2AAC65FD1BBE43BD0099E96E /* AudioToolbox.framework */,
+				2AAC66011BBE43D30099E96E /* ParseUI.framework */,
+				2AAC66001BBE43D30099E96E /* Parse.framework */,
+				2AAC65FF1BBE43D30099E96E /* Bolts.framework */,
+			);
+			name = Framwork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AAC65C11BBE43170099E96E /* Marymount iGraduate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AAC65E11BBE43170099E96E /* Build configuration list for PBXNativeTarget "Marymount iGraduate" */;
+			buildPhases = (
+				2AAC65BE1BBE43170099E96E /* Sources */,
+				2AAC65BF1BBE43170099E96E /* Frameworks */,
+				2AAC65C01BBE43170099E96E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Marymount iGraduate";
+			productName = "Marymount iGraduate";
+			productReference = 2AAC65C21BBE43170099E96E /* Marymount iGraduate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AAC65D61BBE43170099E96E /* Marymount iGraduateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AAC65E41BBE43170099E96E /* Build configuration list for PBXNativeTarget "Marymount iGraduateTests" */;
+			buildPhases = (
+				2AAC65D31BBE43170099E96E /* Sources */,
+				2AAC65D41BBE43170099E96E /* Frameworks */,
+				2AAC65D51BBE43170099E96E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AAC65D91BBE43170099E96E /* PBXTargetDependency */,
+			);
+			name = "Marymount iGraduateTests";
+			productName = "Marymount iGraduateTests";
+			productReference = 2AAC65D71BBE43170099E96E /* Marymount iGraduateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AAC65BA1BBE43170099E96E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Mahmood;
+				TargetAttributes = {
+					2AAC65C11BBE43170099E96E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2AAC65D61BBE43170099E96E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2AAC65C11BBE43170099E96E;
+					};
+				};
+			};
+			buildConfigurationList = 2AAC65BD1BBE43170099E96E /* Build configuration list for PBXProject "Marymount iGraduate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AAC65B91BBE43170099E96E;
+			productRefGroup = 2AAC65C31BBE43170099E96E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AAC65C11BBE43170099E96E /* Marymount iGraduate */,
+				2AAC65D61BBE43170099E96E /* Marymount iGraduateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AAC65C01BBE43170099E96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AAC65CD1BBE43170099E96E /* Main.storyboard in Resources */,
+				2AAC66201BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg in Resources */,
+				2AE68D6C1BD9815E001062FD /* search67.png in Resources */,
+				2A6363C21BDC6193006F35B6 /* clouds104-2.png in Resources */,
+				2AAC65D21BBE43170099E96E /* LaunchScreen.xib in Resources */,
+				2A8843521C0568EC00E897A8 /* one.jpg in Resources */,
+				2AE68D6E1BD982E5001062FD /* search67-3.png in Resources */,
+				2AE68D6A1BD9569A001062FD /* door13-5.png in Resources */,
+				2AE68D681BD94BB8001062FD /* door13-4.png in Resources */,
+				2A6561C91BD49CB50035E949 /* Images.xcassets in Resources */,
+				2A6363C41BDC620B006F35B6 /* clouds104-6.png in Resources */,
+				2AAC661C1BC074570099E96E /* logo11.jpg in Resources */,
+				2AAC661E1BC074CF0099E96E /* logo1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AAC65D51BBE43170099E96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AAC65BE1BBE43170099E96E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6363CA1BE5D440006F35B6 /* WeatherService.swift in Sources */,
+				2A3E596A1BEC853A00DF5DCC /* tableViewCellViewController.swift in Sources */,
+				2A6561CB1BD4A6AE0035E949 /* HomeViewController.swift in Sources */,
+				2A6363C61BE5D331006F35B6 /* WeatherDataViewController.swift in Sources */,
+				2A6363C81BE5D3D4006F35B6 /* WeatherData.swift in Sources */,
+				2A70244C1BFFAA2C00E6013C /* Model.swift in Sources */,
+				2AAC66091BBE44570099E96E /* LoginViewController.swift in Sources */,
+				2AAC65C81BBE43170099E96E /* AppDelegate.swift in Sources */,
+				2AAC660B1BBE45320099E96E /* RegisterViewController.swift in Sources */,
+				2AE6B4131BD5BD26005506FC /* tableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AAC65D31BBE43170099E96E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AAC65DE1BBE43170099E96E /* Marymount_iGraduateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AAC65D91BBE43170099E96E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AAC65C11BBE43170099E96E /* Marymount iGraduate */;
+			targetProxy = 2AAC65D81BBE43170099E96E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AAC65CB1BBE43170099E96E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AAC65CC1BBE43170099E96E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AAC65D01BBE43170099E96E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AAC65D11BBE43170099E96E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AAC65DF1BBE43170099E96E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AAC65E01BBE43170099E96E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AAC65E21BBE43170099E96E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Marymount iGraduate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AAC65E31BBE43170099E96E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Marymount iGraduate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2AAC65E51BBE43170099E96E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Marymount iGraduateTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marymount iGraduate.app/Marymount iGraduate";
+			};
+			name = Debug;
+		};
+		2AAC65E61BBE43170099E96E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Marymount iGraduateTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marymount iGraduate.app/Marymount iGraduate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AAC65BD1BBE43170099E96E /* Build configuration list for PBXProject "Marymount iGraduate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AAC65DF1BBE43170099E96E /* Debug */,
+				2AAC65E01BBE43170099E96E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AAC65E11BBE43170099E96E /* Build configuration list for PBXNativeTarget "Marymount iGraduate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AAC65E21BBE43170099E96E /* Debug */,
+				2AAC65E31BBE43170099E96E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AAC65E41BBE43170099E96E /* Build configuration list for PBXNativeTarget "Marymount iGraduateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AAC65E51BBE43170099E96E /* Debug */,
+				2AAC65E61BBE43170099E96E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AAC65BA1BBE43170099E96E /* Project object */;
+}
