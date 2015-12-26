@@ -10,7 +10,7 @@ import Foundation
 import Parse
 import ParseUI
 
-class tableViewController: PFQueryTableViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate  {
+class tableViewController: PFQueryTableViewController,  UISearchBarDelegate  {
     
     @IBAction func AddItem(sender: AnyObject) {
     }
@@ -41,7 +41,7 @@ class tableViewController: PFQueryTableViewController, UITableViewDataSource, UI
     }
     
     //required code
-    required init!(coder aDecoder: NSCoder!) {
+    required init!(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     
         //Inside req code. Configure the PFQueryTableView
@@ -54,7 +54,7 @@ class tableViewController: PFQueryTableViewController, UITableViewDataSource, UI
   
     }
     override func queryForTable() -> PFQuery {
-        var query = PFQuery(className: "_User")
+        let query = PFQuery(className: "_User")
         query.whereKey("username", equalTo: PFUser.currentUser()!.username!)
         query.orderByDescending("updatedAt")
         return query
@@ -77,7 +77,7 @@ class tableViewController: PFQueryTableViewController, UITableViewDataSource, UI
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as? PFTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as? PFTableViewCell
         if cell == nil {
           //  cell = tableViewCellViewController(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         }
@@ -90,7 +90,7 @@ class tableViewController: PFQueryTableViewController, UITableViewDataSource, UI
             cell?.textLabel?.text = object["title"] as? String
             
            
-            var initialThumbnail = UIImage(named: "one.jpg")
+            _ = UIImage(named: "one.jpg")
             
             if let thumbnail = object["image"] as? PFFile {
                 

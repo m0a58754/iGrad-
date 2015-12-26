@@ -230,7 +230,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkr-tR-H3Z">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkr-tR-H3Z">
                                 <rect key="frame" x="165" y="127" width="270" height="346"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SmartSearch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhh-xF-1Yz">
@@ -242,7 +242,7 @@
                                             <rect key="frame" x="74" y="20" width="124" height="58"/>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n5E-2K-Cqz">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n5E-2K-Cqz">
                                         <rect key="frame" x="13" y="134" width="245" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="245" id="NUY-Cb-AmT"/>
@@ -290,7 +290,7 @@
                                             <action selector="signUpAction:" destination="PTg-NN-crH" eventType="touchUpInside" id="R54-4C-Zbm"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaQ-UL-Kui">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaQ-UL-Kui">
                                         <rect key="frame" x="13" y="184" width="245" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="J4p-se-fwW"/>
@@ -782,42 +782,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81y-3e-WSv">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9VY-1P-pwz">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="313" width="20" height="20"/>
+                                </variation>
+                            </activityIndicatorView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7P-E5-RWv">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hRy-zo-sZk" id="9XB-Rd-UJS"/>
+                                </connections>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="81y-3e-WSv" secondAttribute="trailing" constant="42" id="AKA-fK-Q2d"/>
-                            <constraint firstItem="81y-3e-WSv" firstAttribute="leading" secondItem="kD9-nB-zDm" secondAttribute="leadingMargin" constant="30" id="AeP-ed-MCl"/>
-                            <constraint firstItem="81y-3e-WSv" firstAttribute="top" secondItem="dln-k0-m8u" secondAttribute="bottom" constant="49" id="ZNC-mn-MK2"/>
-                            <constraint firstItem="Cjy-9W-h50" firstAttribute="top" secondItem="81y-3e-WSv" secondAttribute="bottom" constant="124" id="hZu-K3-l5v"/>
+                            <constraint firstItem="Cjy-9W-h50" firstAttribute="top" secondItem="z7P-E5-RWv" secondAttribute="bottom" constant="8" symbolic="YES" id="Rsi-6l-KBp"/>
+                            <constraint firstItem="z7P-E5-RWv" firstAttribute="trailing" secondItem="kD9-nB-zDm" secondAttribute="trailingMargin" id="jC8-3d-uge"/>
+                            <constraint firstItem="z7P-E5-RWv" firstAttribute="top" secondItem="dln-k0-m8u" secondAttribute="bottom" constant="8" symbolic="YES" id="r7L-KU-iH0"/>
+                            <constraint firstItem="z7P-E5-RWv" firstAttribute="leading" secondItem="kD9-nB-zDm" secondAttribute="leadingMargin" id="yFa-rd-mBo"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="81y-3e-WSv"/>
+                                <exclude reference="9VY-1P-pwz"/>
+                                <exclude reference="z7P-E5-RWv"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="hZu-K3-l5v"/>
-                                <exclude reference="AKA-fK-Q2d"/>
-                                <exclude reference="AeP-ed-MCl"/>
-                                <exclude reference="ZNC-mn-MK2"/>
+                                <exclude reference="Rsi-6l-KBp"/>
+                                <exclude reference="jC8-3d-uge"/>
+                                <exclude reference="r7L-KU-iH0"/>
+                                <exclude reference="yFa-rd-mBo"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="81y-3e-WSv"/>
+                                <include reference="9VY-1P-pwz"/>
+                                <include reference="z7P-E5-RWv"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="hZu-K3-l5v"/>
-                                <include reference="AKA-fK-Q2d"/>
-                                <include reference="AeP-ed-MCl"/>
-                                <include reference="ZNC-mn-MK2"/>
+                                <include reference="Rsi-6l-KBp"/>
+                                <include reference="jC8-3d-uge"/>
+                                <include reference="r7L-KU-iH0"/>
+                                <include reference="yFa-rd-mBo"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="81y-3e-WSv" id="aGd-Cd-d2j"/>
+                        <outlet property="documentWebView" destination="z7P-E5-RWv" id="R4e-mR-2Mb"/>
+                        <outlet property="loadIndicator" destination="9VY-1P-pwz" id="q49-U5-k6o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n1j-Wl-KVd" userLabel="First Responder" sceneMemberID="firstResponder"/>

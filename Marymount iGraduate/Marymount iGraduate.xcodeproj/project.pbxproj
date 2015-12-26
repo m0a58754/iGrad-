@@ -16,7 +16,7 @@
 		2A6561C91BD49CB50035E949 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6561C81BD49CB50035E949 /* Images.xcassets */; };
 		2A6561CB1BD4A6AE0035E949 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6561CA1BD4A6AE0035E949 /* HomeViewController.swift */; };
 		2A70244C1BFFAA2C00E6013C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70244B1BFFAA2C00E6013C /* Model.swift */; };
-		2A8843521C0568EC00E897A8 /* one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8843511C0568EC00E897A8 /* one.jpg */; };
+		2A948B981C2BBAEE00AB2403 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A948B971C2BBAEE00AB2403 /* WebKit.framework */; };
 		2AAC65C81BBE43170099E96E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAC65C71BBE43170099E96E /* AppDelegate.swift */; };
 		2AAC65CD1BBE43170099E96E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC65CB1BBE43170099E96E /* Main.storyboard */; };
 		2AAC65D21BBE43170099E96E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC65D01BBE43170099E96E /* LaunchScreen.xib */; };
@@ -41,11 +41,10 @@
 		2AAC661C1BC074570099E96E /* logo11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC661B1BC074570099E96E /* logo11.jpg */; };
 		2AAC661E1BC074CF0099E96E /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC661D1BC074CF0099E96E /* logo1.png */; };
 		2AAC66201BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC661F1BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg */; };
-		2AE68D681BD94BB8001062FD /* door13-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D671BD94BB8001062FD /* door13-4.png */; };
-		2AE68D6A1BD9569A001062FD /* door13-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D691BD9569A001062FD /* door13-5.png */; };
 		2AE68D6C1BD9815E001062FD /* search67.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D6B1BD9815E001062FD /* search67.png */; };
 		2AE68D6E1BD982E5001062FD /* search67-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D6D1BD982E5001062FD /* search67-3.png */; };
 		2AE6B4131BD5BD26005506FC /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE6B4121BD5BD26005506FC /* tableViewController.swift */; };
+		2AF045BD1C2E5BE70047B51F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AF045BC1C2E5BE70047B51F /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewCellViewController.swift; sourceTree = "<group>"; };
+		2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tableViewCellViewController.swift; path = ../tableViewCellViewController.swift; sourceTree = "<group>"; };
 		2A6363C11BDC6193006F35B6 /* clouds104-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clouds104-2.png"; path = "../../../../Downloads/clouds104-2.png"; sourceTree = "<group>"; };
 		2A6363C31BDC620B006F35B6 /* clouds104-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clouds104-6.png"; path = "../../../../Downloads/clouds104-6.png"; sourceTree = "<group>"; };
 		2A6363C51BE5D331006F35B6 /* WeatherDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +67,7 @@
 		2A6561C81BD49CB50035E949 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../Downloads/ParseDemo/ParseDemo/Images.xcassets; sourceTree = "<group>"; };
 		2A6561CA1BD4A6AE0035E949 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../Downloads/ParseDemo/ParseDemo/HomeViewController.swift; sourceTree = "<group>"; };
 		2A70244B1BFFAA2C00E6013C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		2A8843511C0568EC00E897A8 /* one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = one.jpg; sourceTree = "<group>"; };
+		2A948B971C2BBAEE00AB2403 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2AAC65C21BBE43170099E96E /* Marymount iGraduate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marymount iGraduate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAC65C61BBE43170099E96E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AAC65C71BBE43170099E96E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,11 +97,10 @@
 		2AAC661B1BC074570099E96E /* logo11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo11.jpg; sourceTree = "<group>"; };
 		2AAC661D1BC074CF0099E96E /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
 		2AAC661F1BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Marymount_Athletics_Logo1.jpg; sourceTree = "<group>"; };
-		2AE68D671BD94BB8001062FD /* door13-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "door13-4.png"; path = "../../../../Downloads/door13-4.png"; sourceTree = "<group>"; };
-		2AE68D691BD9569A001062FD /* door13-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "door13-5.png"; path = "../../../../Downloads/door13-5.png"; sourceTree = "<group>"; };
 		2AE68D6B1BD9815E001062FD /* search67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search67.png; path = ../../../../Downloads/search67.png; sourceTree = "<group>"; };
 		2AE68D6D1BD982E5001062FD /* search67-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search67-3.png"; path = "../../../../Downloads/search67-3.png"; sourceTree = "<group>"; };
 		2AE6B4121BD5BD26005506FC /* tableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
+		2AF045BC1C2E5BE70047B51F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A948B981C2BBAEE00AB2403 /* WebKit.framework in Frameworks */,
 				2AAC65FE1BBE43BD0099E96E /* AudioToolbox.framework in Frameworks */,
 				2AAC65FC1BBE43B20099E96E /* CFNetwork.framework in Frameworks */,
 				2AAC65FA1BBE43AD0099E96E /* CoreLocation.framework in Frameworks */,
@@ -145,8 +144,6 @@
 				2A6363C31BDC620B006F35B6 /* clouds104-6.png */,
 				2AE68D6D1BD982E5001062FD /* search67-3.png */,
 				2AE68D6B1BD9815E001062FD /* search67.png */,
-				2AE68D691BD9569A001062FD /* door13-5.png */,
-				2AE68D671BD94BB8001062FD /* door13-4.png */,
 				2AAC661F1BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg */,
 				2AAC661D1BC074CF0099E96E /* logo1.png */,
 				2AAC661B1BC074570099E96E /* logo11.jpg */,
@@ -177,7 +174,8 @@
 		2AAC65B91BBE43170099E96E = {
 			isa = PBXGroup;
 			children = (
-				2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */,
+				2AF045BC1C2E5BE70047B51F /* Default-568h@2x.png */,
+				2A948B971C2BBAEE00AB2403 /* WebKit.framework */,
 				2AAC66161BBF1C000099E96E /* Framwork */,
 				2AAC65C41BBE43170099E96E /* Marymount iGraduate */,
 				2AAC65DA1BBE43170099E96E /* Marymount iGraduateTests */,
@@ -197,7 +195,7 @@
 		2AAC65C41BBE43170099E96E /* Marymount iGraduate */ = {
 			isa = PBXGroup;
 			children = (
-				2A8843511C0568EC00E897A8 /* one.jpg */,
+				2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */,
 				2AAC65C71BBE43170099E96E /* AppDelegate.swift */,
 				2AE6B4121BD5BD26005506FC /* tableViewController.swift */,
 				2A70244B1BFFAA2C00E6013C /* Model.swift */,
@@ -304,7 +302,8 @@
 		2AAC65BA1BBE43170099E96E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Mahmood;
 				TargetAttributes = {
 					2AAC65C11BBE43170099E96E = {
@@ -341,14 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AAC65CD1BBE43170099E96E /* Main.storyboard in Resources */,
+				2AF045BD1C2E5BE70047B51F /* Default-568h@2x.png in Resources */,
 				2AAC66201BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg in Resources */,
 				2AE68D6C1BD9815E001062FD /* search67.png in Resources */,
 				2A6363C21BDC6193006F35B6 /* clouds104-2.png in Resources */,
 				2AAC65D21BBE43170099E96E /* LaunchScreen.xib in Resources */,
-				2A8843521C0568EC00E897A8 /* one.jpg in Resources */,
 				2AE68D6E1BD982E5001062FD /* search67-3.png in Resources */,
-				2AE68D6A1BD9569A001062FD /* door13-5.png in Resources */,
-				2AE68D681BD94BB8001062FD /* door13-4.png in Resources */,
 				2A6561C91BD49CB50035E949 /* Images.xcassets in Resources */,
 				2A6363C41BDC620B006F35B6 /* clouds104-6.png in Resources */,
 				2AAC661C1BC074570099E96E /* logo11.jpg in Resources */,
@@ -442,6 +439,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -514,6 +512,7 @@
 				);
 				INFOPLIST_FILE = "Marymount iGraduate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Simple.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -528,6 +527,7 @@
 				);
 				INFOPLIST_FILE = "Marymount iGraduate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Simple.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -546,6 +546,7 @@
 				);
 				INFOPLIST_FILE = "Marymount iGraduateTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Simple.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marymount iGraduate.app/Marymount iGraduate";
 			};
@@ -561,6 +562,7 @@
 				);
 				INFOPLIST_FILE = "Marymount iGraduateTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Simple.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marymount iGraduate.app/Marymount iGraduate";
 			};

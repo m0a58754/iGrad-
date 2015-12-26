@@ -10,96 +10,171 @@ import ParseUI
 import Foundation
 import UIKit
 
-class tableViewCellViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView! = UIImageView()
-    var resultimageView = [PFObject]()
-    var resultarticleView = [PFFile]()
-    /*
+class tableViewCellViewController: UIViewController, UIWebViewDelegate, UIScrollViewDelegate {
+
+@IBOutlet weak var loadIndicator: UIActivityIndicatorView!
+ @IBOutlet weak var documentWebView: UIWebView?
+   var currentObject = PFObject?()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        testParseSaveIssue()
-        
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func testParseSaveIssue() {
-        
-        let str = "Working at Parse is great!"
-        let data = str.dataUsingEncoding(NSUTF8StringEncoding)
-        let file = PFFile(name:"I made it into Parse.txt", data:data!)
-        
-        file.saveInBackgroundWithBlock({ (succeeded: Bool, error: NSError?) -> Void in
-            // Handle success or failure here ...
-            if succeeded {
-                println("Save successful")
-            } else {
-                println("Save unsuccessful: \(error?.userInfo)")
-            }
+        if let object = currentObject {
             
-            }, progressBlock: { (percentDone: Int32) -> Void in
-                // Update your progress spinner here. percentDone will be between 0 and 100.
-        })
-        
-        var jobApplication = PFObject(className:"User")
-        if let jobApplication = PFUser.currentUser()?["file"] as? PFFile {
-            
-        }
-      
-    }
-  */
-    override func viewDidAppear(animated: Bool) {
-        
-   
-     
-        var query = PFQuery(className:"_User")
-        
-       // query.whereKey("username", equalTo: PFUser.currentUser()!.username!)
-    
-        
-      //  query.findObjectsInBackgroundWithBlock { ( objects: [AnyObject]?, error: NSError?) -> Void in
-      
-        query.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) -> Void in
-        
-  
-      if let objects = objects {
-        for object in objects {
-  
-            if let resultView = PFUser.currentUser()?["file"] as? PFFile {
-   //  if let resultView = object.valueForKey("file") as? PFFile {
-            
-              
-            
-            //Thats NOT unwrapped ? Need to use !
-            resultView.getDataInBackgroundWithBlock { (data: NSData?, error: NSError?) -> Void in
-                if (error == nil) {
+            let pdfResults:PFFile! = object.objectForKey("file") as! PFFile
+            if let currentPDF = pdfResults {
+                if currentPDF.url != nil {
+                    let urlFromParse = NSURL(string: currentPDF.url!)
+                    let request = NSURLRequest(URL: urlFromParse!)
+                    self.documentWebView?.loadRequest(request)
+                }
                 
-                 // let data = object.dataUsingEncoding(NSUTF8StringEncoding)
-                    let image = UIImage(data: data!)
-                     self.imageView.image = UIImage(data: data!)
-                   // self.resultarticleView.append(object.objectForKey("file") as! PFFile)
-                    
-                    println(data)
-                    
-                    
-                            }
-                        }
-                }
-                }
             }
+        }
         
-       
-        })
+    }
 
-
+    func webViewDidStartLoad(webView: UIWebView) {
+        loadIndicator.hidden = false
+        loadIndicator.startAnimating()
+        print("Webview started Loading", terminator: "")
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        loadIndicator.hidden = true
+        loadIndicator.stopAnimating()
     }
 
 }
 
+/*
+    var object = nil as PFObject?
+    var resultimageView = [PFObject]()
+    var resultarticleView = [PFFile]()
+    
+   
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Results"
+        self.view.backgroundColor = UIColor.whiteColor()
+        
+        if let object = self.object {
+            
+            let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+            var documentsDir = paths.firstObject as! String
+            if documentsDir.hasSuffix("/") == false {
+                documentsDir = documentsDir + "/"
+            }
+            let filePath = documentsDir + title! + ".pdf"
+            println(filePath)
+            
+            let fileManager = NSFileManager.defaultManager() as NSFileManager
+            if fileManager.fileExistsAtPath(filePath) {
+                let fileUrl = NSURL.fileURLWithPath(filePath) as NSURL?
+                self.documentWebView?.loadRequest(NSURLRequest(URL: fileUrl!))
+            }
+            else {
+            //converting pfObject into PFFile. if let statement to finish converting into pffile now it is useable as PFFile
+            let pdfFile = object["file"] as? PFFile
+            if let pdfFile = pdfFile {
+                
+                //add bracket
+                pdfFile.getDataInBackgroundWithBlock {(data, error) -> Void in
+                    if let pdfData = data as NSData? {
+                       
+                        pdfData.writeToFile(filePath, atomically: true)
+                        
+                        let fileUrl = NSURL.fileURLWithPath(filePath) as NSURL?
+                        self.documentWebView?.loadRequest(NSURLRequest(URL: fileUrl!))
+                       
+                    }
+                    
+                
+                }
+                
+            }
+            
+        }
+        
+    }
+      
+}
+    
+}
 
+    /*
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Results"
+        view.backgroundColor = UIColor.whiteColor()
+        documentWebView.backgroundColor = UIColor.whiteColor()
+        
+        loadDocument()
+        
+        
+    }
+  
+    override func viewDidAppear(animated: Bool) {
+      
+        var query = PFQuery(className:"_User")
+        
+        query.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) -> Void in
+            
+            if let objects = objects {
+                
+            if let resultView = PFUser.currentUser()?["file"] as? PFFile {
+                    
+                //Thats NOT unwrapped ? Need to use !
+                    resultView.getDataInBackgroundWithBlock { (data: NSData?, error: NSError?) -> Void in
+                        
+                            if (error == nil) {
+                            
+                            let image = UIImage(data: data!)
+                            
+                            self.imageView.image = UIImage(data: data!)
+                            
+                            // self.resultarticleView.append(object.objectForKey("file") as! PFFile)
+                            
+                            //  println(data)
+                            
+                            
+                        }
+                    }
+                }
+            }
+            
+        })
+
+       
+    }
+    var data: PFObject? {
+        didSet{
+            
+        loadDocument()
+        }
+    }
+    
+ func loadDocument() {
+        if data != nil {
+            if let file: PFFile? = data!.objectForKey("file") as? PFFile {
+                if let url = NSURL(string: file!.url!) {
+                    let request = NSURLRequest(URL: url)
+                    documentWebView?.loadRequest(request)
+
+                }
+           }
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+*/
+
+
+
+    
+ 
+
+
+*/

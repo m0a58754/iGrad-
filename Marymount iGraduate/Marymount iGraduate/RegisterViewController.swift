@@ -27,26 +27,17 @@ class RegisterViewController: UIViewController {
     
     @IBAction func signUpAction(sender: AnyObject) {
         
-        var username = self.usernameField.text
-        var password = self.passwordField.text
+        let username = self.usernameField.text
+        let password = self.passwordField.text
        
        
         // Validate the text fields
-        if count(username) < 5 {
-            var alert = UIAlertView(title: "Invalid", message: "Username must be greater than 5 characters", delegate: self, cancelButtonTitle: "OK")
-            alert.show()
-            
-        } else if count(password) < 8 {
-            var alert = UIAlertView(title: "Invalid", message: "Password must be greater than 8 characters", delegate: self, cancelButtonTitle: "OK")
-            alert.show()
-            
-            
-        } else {
+      
             // Run a spinner to show a task in progress
-            var spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
+            let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
             spinner.startAnimating()
             
-            var newUser = PFUser()
+            let newUser = PFUser()
             
             newUser.username = username
             newUser.password = password
@@ -58,14 +49,14 @@ class RegisterViewController: UIViewController {
                 // Stop the spinner
                 spinner.stopAnimating()
                 if ((error) != nil) {
-                    var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                     
                 } else {
-                    var alert = UIAlertView(title: "Success", message: "Signed Up", delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertView(title: "Success", message: "Signed Up", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") as! UIViewController
+                        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home")
                         self.presentViewController(viewController, animated: true, completion: nil)
                     })
                 }
@@ -84,4 +75,4 @@ class RegisterViewController: UIViewController {
     */
     
 
-}
+

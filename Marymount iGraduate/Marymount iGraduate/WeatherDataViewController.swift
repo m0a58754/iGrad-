@@ -24,7 +24,7 @@ public class WeatherDataViewController: UIViewController {
         }
         
     }
-    
+   /*
     public func getWeatherData(latLong: String, completion: (error: NSError?) -> ()) {
         WeatherService.sharedInstance.fetchWeatherData(latLong, completion: { (data, error) -> () in
         dispatch_async(dispatch_get_main_queue()) {
@@ -33,6 +33,6 @@ public class WeatherDataViewController: UIViewController {
         }
         })
     }
-    
+    */
 }
 
