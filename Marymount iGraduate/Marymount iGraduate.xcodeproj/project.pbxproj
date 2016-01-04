@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A3E596A1BEC853A00DF5DCC /* tableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */; };
+		2A3E596A1BEC853A00DF5DCC /* pdfDoctableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E59691BEC853A00DF5DCC /* pdfDoctableViewCellViewController.swift */; };
 		2A6363C21BDC6193006F35B6 /* clouds104-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6363C11BDC6193006F35B6 /* clouds104-2.png */; };
 		2A6363C41BDC620B006F35B6 /* clouds104-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6363C31BDC620B006F35B6 /* clouds104-6.png */; };
 		2A6363C61BE5D331006F35B6 /* WeatherDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6363C51BE5D331006F35B6 /* WeatherDataViewController.swift */; };
@@ -43,8 +43,10 @@
 		2AAC66201BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AAC661F1BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg */; };
 		2AE68D6C1BD9815E001062FD /* search67.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D6B1BD9815E001062FD /* search67.png */; };
 		2AE68D6E1BD982E5001062FD /* search67-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE68D6D1BD982E5001062FD /* search67-3.png */; };
-		2AE6B4131BD5BD26005506FC /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE6B4121BD5BD26005506FC /* tableViewController.swift */; };
+		2AE6B4131BD5BD26005506FC /* pdfDoctableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE6B4121BD5BD26005506FC /* pdfDoctableViewController.swift */; };
 		2AF045BD1C2E5BE70047B51F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AF045BC1C2E5BE70047B51F /* Default-568h@2x.png */; };
+		2AFED4141C3A37A700FC3020 /* libSESlideTableViewCell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFED4131C3A37A700FC3020 /* libSESlideTableViewCell.a */; };
+		FE6E1D739E91E92019BDDEC4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D0B87AA0FBCC0EA13E72AD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tableViewCellViewController.swift; path = ../tableViewCellViewController.swift; sourceTree = "<group>"; };
+		10D0B87AA0FBCC0EA13E72AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3E59691BEC853A00DF5DCC /* pdfDoctableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = pdfDoctableViewCellViewController.swift; path = ../pdfDoctableViewCellViewController.swift; sourceTree = "<group>"; };
 		2A6363C11BDC6193006F35B6 /* clouds104-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clouds104-2.png"; path = "../../../../Downloads/clouds104-2.png"; sourceTree = "<group>"; };
 		2A6363C31BDC620B006F35B6 /* clouds104-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clouds104-6.png"; path = "../../../../Downloads/clouds104-6.png"; sourceTree = "<group>"; };
 		2A6363C51BE5D331006F35B6 /* WeatherDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataViewController.swift; sourceTree = "<group>"; };
@@ -99,8 +102,12 @@
 		2AAC661F1BC07BA10099E96E /* Marymount_Athletics_Logo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Marymount_Athletics_Logo1.jpg; sourceTree = "<group>"; };
 		2AE68D6B1BD9815E001062FD /* search67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search67.png; path = ../../../../Downloads/search67.png; sourceTree = "<group>"; };
 		2AE68D6D1BD982E5001062FD /* search67-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search67-3.png"; path = "../../../../Downloads/search67-3.png"; sourceTree = "<group>"; };
-		2AE6B4121BD5BD26005506FC /* tableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
-		2AF045BC1C2E5BE70047B51F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2AE6B4121BD5BD26005506FC /* pdfDoctableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pdfDoctableViewController.swift; sourceTree = "<group>"; };
+		2AF045BC1C2E5BE70047B51F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		2AFED4111C3A336C00FC3020 /* libSESlideTableViewCell.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSESlideTableViewCell.a; path = "Pods/../build/Debug-iphoneos/libSESlideTableViewCell.a"; sourceTree = "<group>"; };
+		2AFED4131C3A37A700FC3020 /* libSESlideTableViewCell.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSESlideTableViewCell.a; path = "Pods/../build/Debug-iphoneos/libSESlideTableViewCell.a"; sourceTree = "<group>"; };
+		6F4296AD84F19410AC78FDC4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		97DB49FB77142A49F9F2E5FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFED4141C3A37A700FC3020 /* libSESlideTableViewCell.a in Frameworks */,
 				2A948B981C2BBAEE00AB2403 /* WebKit.framework in Frameworks */,
 				2AAC65FE1BBE43BD0099E96E /* AudioToolbox.framework in Frameworks */,
 				2AAC65FC1BBE43B20099E96E /* CFNetwork.framework in Frameworks */,
@@ -124,6 +132,7 @@
 				2AAC66041BBE43D30099E96E /* ParseUI.framework in Frameworks */,
 				2AAC65EA1BBE434E0099E96E /* Social.framework in Frameworks */,
 				2AAC65E81BBE43450099E96E /* QuartzCore.framework in Frameworks */,
+				FE6E1D739E91E92019BDDEC4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +146,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219C53207EF97D77562A1446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AFED4131C3A37A700FC3020 /* libSESlideTableViewCell.a */,
+				2AFED4111C3A336C00FC3020 /* libSESlideTableViewCell.a */,
+				10D0B87AA0FBCC0EA13E72AD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2A2CBE131BDA94D600CC4705 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				2AF045BC1C2E5BE70047B51F /* Default-568h@2x.png */,
 				2A6363C11BDC6193006F35B6 /* clouds104-2.png */,
 				2A6363C31BDC620B006F35B6 /* clouds104-6.png */,
 				2AE68D6D1BD982E5001062FD /* search67-3.png */,
@@ -174,12 +194,12 @@
 		2AAC65B91BBE43170099E96E = {
 			isa = PBXGroup;
 			children = (
-				2AF045BC1C2E5BE70047B51F /* Default-568h@2x.png */,
-				2A948B971C2BBAEE00AB2403 /* WebKit.framework */,
 				2AAC66161BBF1C000099E96E /* Framwork */,
 				2AAC65C41BBE43170099E96E /* Marymount iGraduate */,
 				2AAC65DA1BBE43170099E96E /* Marymount iGraduateTests */,
 				2AAC65C31BBE43170099E96E /* Products */,
+				8223FDAC33F9A911CDA43327 /* Pods */,
+				219C53207EF97D77562A1446 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,9 +215,8 @@
 		2AAC65C41BBE43170099E96E /* Marymount iGraduate */ = {
 			isa = PBXGroup;
 			children = (
-				2A3E59691BEC853A00DF5DCC /* tableViewCellViewController.swift */,
-				2AAC65C71BBE43170099E96E /* AppDelegate.swift */,
-				2AE6B4121BD5BD26005506FC /* tableViewController.swift */,
+				2A3E59691BEC853A00DF5DCC /* pdfDoctableViewCellViewController.swift */,
+				2AE6B4121BD5BD26005506FC /* pdfDoctableViewController.swift */,
 				2A70244B1BFFAA2C00E6013C /* Model.swift */,
 				2A2CBE131BDA94D600CC4705 /* Pictures */,
 				2A6363CF1BE6F34F006F35B6 /* Login Service */,
@@ -212,6 +231,7 @@
 		2AAC65C51BBE43170099E96E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AAC65C71BBE43170099E96E /* AppDelegate.swift */,
 				2AAC65D01BBE43170099E96E /* LaunchScreen.xib */,
 				2A6561C81BD49CB50035E949 /* Images.xcassets */,
 				2AAC65C61BBE43170099E96E /* Info.plist */,
@@ -239,6 +259,7 @@
 		2AAC66161BBF1C000099E96E /* Framwork */ = {
 			isa = PBXGroup;
 			children = (
+				2A948B971C2BBAEE00AB2403 /* WebKit.framework */,
 				2AAC65E71BBE43450099E96E /* QuartzCore.framework */,
 				2AAC65E91BBE434E0099E96E /* Social.framework */,
 				2AAC65EB1BBE43550099E96E /* Accounts.framework */,
@@ -258,6 +279,15 @@
 			name = Framwork;
 			sourceTree = "<group>";
 		};
+		8223FDAC33F9A911CDA43327 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F4296AD84F19410AC78FDC4 /* Pods.debug.xcconfig */,
+				97DB49FB77142A49F9F2E5FE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AAC65E11BBE43170099E96E /* Build configuration list for PBXNativeTarget "Marymount iGraduate" */;
 			buildPhases = (
+				538328C7BA604A6F7F3DD378 /* Check Pods Manifest.lock */,
 				2AAC65BE1BBE43170099E96E /* Sources */,
 				2AAC65BF1BBE43170099E96E /* Frameworks */,
 				2AAC65C01BBE43170099E96E /* Resources */,
+				9683D8F89C1E50733CD4B0FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,13 +394,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		538328C7BA604A6F7F3DD378 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9683D8F89C1E50733CD4B0FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2AAC65BE1BBE43170099E96E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2A6363CA1BE5D440006F35B6 /* WeatherService.swift in Sources */,
-				2A3E596A1BEC853A00DF5DCC /* tableViewCellViewController.swift in Sources */,
+				2A3E596A1BEC853A00DF5DCC /* pdfDoctableViewCellViewController.swift in Sources */,
 				2A6561CB1BD4A6AE0035E949 /* HomeViewController.swift in Sources */,
 				2A6363C61BE5D331006F35B6 /* WeatherDataViewController.swift in Sources */,
 				2A6363C81BE5D3D4006F35B6 /* WeatherData.swift in Sources */,
@@ -376,7 +441,7 @@
 				2AAC66091BBE44570099E96E /* LoginViewController.swift in Sources */,
 				2AAC65C81BBE43170099E96E /* AppDelegate.swift in Sources */,
 				2AAC660B1BBE45320099E96E /* RegisterViewController.swift in Sources */,
-				2AE6B4131BD5BD26005506FC /* tableViewController.swift in Sources */,
+				2AE6B4131BD5BD26005506FC /* pdfDoctableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +569,7 @@
 		};
 		2AAC65E21BBE43170099E96E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4296AD84F19410AC78FDC4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -512,6 +578,10 @@
 				);
 				INFOPLIST_FILE = "Marymount iGraduate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Simple.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -519,6 +589,7 @@
 		};
 		2AAC65E31BBE43170099E96E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97DB49FB77142A49F9F2E5FE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -527,6 +598,10 @@
 				);
 				INFOPLIST_FILE = "Marymount iGraduate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Simple.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

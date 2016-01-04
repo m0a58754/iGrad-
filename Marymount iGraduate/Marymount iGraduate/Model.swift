@@ -6,4 +6,20 @@
 //  Copyright (c) 2015 Mahmood. All rights reserved.
 //
 
-import Foundation
+
+import UIKit
+
+class DocumentView {
+    
+    var name: String
+    var description: String
+    var thumbnail: UIImage?
+    var fileData: NSData?
+    
+    init(name: String, description: String) {
+        self.name = name
+        self.description = description
+        
+    }
+    
+}

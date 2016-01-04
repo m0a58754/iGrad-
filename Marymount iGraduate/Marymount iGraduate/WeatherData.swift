@@ -14,6 +14,7 @@ public class WeatherData: NSObject {
     let summary: String
   
     public init(weatherDictionary: NSDictionary) {
+        
         let weather = weatherDictionary["currently"] as! NSDictionary
         
         temperature = weather["temperature"] as! Int

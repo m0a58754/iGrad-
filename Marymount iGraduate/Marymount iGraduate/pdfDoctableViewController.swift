@@ -5,21 +5,27 @@
 //  Created by Mahmood on 10/19/15.
 //  Copyright (c) 2015 Mahmood. All rights reserved.
 //
-
+import UIKit
 import Foundation
 import Parse
 import ParseUI
 
-class tableViewController: PFQueryTableViewController,  UISearchBarDelegate  {
-    
-    @IBAction func AddItem(sender: AnyObject) {
+
+
+class tableViewController: PFQueryTableViewController,  UISearchBarDelegate, SESlideTableViewCellDelegate {
+    @IBAction func addItem(sender: AnyObject) {
+        
+        
     }
+    
+    
     var resultimageView = [PFObject]()
     var resultarticleView = [PFFile]()
     var searchObjects: NSMutableArray! = NSMutableArray()
     
     @IBOutlet weak var mySeachbar: UISearchBar!
     @IBOutlet weak var myTable: UITableView!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +82,7 @@ class tableViewController: PFQueryTableViewController,  UISearchBarDelegate  {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+        
         
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as? PFTableViewCell
         if cell == nil {
